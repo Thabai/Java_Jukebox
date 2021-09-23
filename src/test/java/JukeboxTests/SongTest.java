@@ -1,24 +1,21 @@
 package JukeboxTests;
 
+import Jukebox.Song;
 import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
-
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SongTest {
 
     @Test
-    @DisplayName("This is a test to check song title");
-    public void testGetTitle(){
-        Song testTitle = new Song();
-        testTitle.setTitle("Simon");
-        assertEquals(testTitle.getTitle(),"Simon","This is a rubbish test");
+    public void testGetTrack(){
+        Song testSong = new Song("Surfin USA", "Beach Boys");
+        assertEquals("Surfin USA", testSong.getTrack(),"No Title");
     }
+
+
     @Test
-    @DisplayName("This is a test to check song artist");
     public void testGetArtist(){
-        Song testArtist = new Song();
-        testArtist.setArtist("Simon");
-        assertEquals(testArtist.getArtist(),"Simon","This is a rubbish test");
+        Song testSong = new Song("Surfin USA", "Beach Boys");
+        assertEquals("Beach Boys", testSong.getArtist(),"No Artist");
     }
 }
