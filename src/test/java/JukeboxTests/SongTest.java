@@ -7,15 +7,17 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SongTest {
 
     @Test
-    public void testGetTrack(){
-        Song testSong = new Song("Surfin USA", "Beach Boys");
+    public void testGetSetTrack(){
+        Song testSong = new Song("Testy", "Testy");
+        testSong.setTrack("Surfin USA");
         assertEquals("Surfin USA", testSong.getTrack(),"No Title");
     }
 
 
     @Test
-    public void testGetArtist(){
-        Song testSong = new Song("Surfin USA", "Beach Boys");
+    public void testGetSetArtist(){
+        Song testSong = new Song("Testy", "Testy");
+        testSong.setArtist("Beach Boys");
         assertEquals("Beach Boys", testSong.getArtist(),"No Artist");
     }
 }

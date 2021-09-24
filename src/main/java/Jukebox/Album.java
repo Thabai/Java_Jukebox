@@ -13,10 +13,13 @@ public class Album extends Playlist{
             this.Artist = Artist;
         }
 
-
-    public List<Song> getSongs() {
-        return Songs;
-    }
+//    public void setSongs(List<Song> songs) {
+//        this.Songs = songs;
+//    }
+//
+//    public List<Song> getSongs() {
+//        return Songs;
+//    }
 
     public String getTitle() {
         return Title;
@@ -26,9 +29,15 @@ public class Album extends Playlist{
         Title = title;
     }
 
-    public String addSong() {
-        this.Songs = songs;
+    public String getArtist() {
+        return Artist;
     }
 
+    public void setArtist(String artist) {
+        this.Artist = artist;
+    }
 
+    public String getAlbumPlaying(){
+        return "Now playing " + this.Title + this.Artist;
+    }
 }
