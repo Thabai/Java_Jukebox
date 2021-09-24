@@ -30,17 +30,17 @@ public class Playlist {
         playlist2.add(tracks.get(2));
 }
 
-    public void getSongs() {
-
-        for (Playlist a : playlist2) {
-            System.out.println(a.getSongPlaying());
-        }
-    }
-
-        public void getSongs1() {
-
-            for (Playlist a : playlist) {
-                System.out.println(a.getAlbumPlaying());
-            }
-        }
+//    public void getSongs() {
+//
+//        for (Playlist a : playlist2) {
+//            System.out.println(a.getSongPlaying());
+//        }
+//    }
+//
+//        public void getSongs1() {
+//
+//            for (Playlist a : playlist) {
+//                System.out.println(a.getAlbumPlaying());
+//            }
+//        }
 }
