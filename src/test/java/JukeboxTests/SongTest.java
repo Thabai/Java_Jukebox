@@ -21,4 +21,11 @@ public class SongTest {
         testSong.setArtist("Beach Boys");
         assertEquals("Beach Boys", testSong.getArtist(),"No Artist");
     }
+
+    @Test
+    public void testGetSetSong(){
+        Song testSong = new Song();
+        testSong.setSong("Surfin USA", "Beach Boys");
+        assertEquals("Now playing Surfin USA by the Beach Boys", testSong.getSong(),"No Artist");
+    }
 }

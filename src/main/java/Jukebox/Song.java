@@ -33,7 +33,12 @@ public class Song {
         this.Artist = artist;
     }
 
-//    public String getSongPlaying(){
-//        return "Now playing " + this.Track + this.Artist;
-//    }
+    public void setSong(String track, String artist){
+        this.Track = track;
+        this.Artist = artist;
+    }
+
+    public String getSong(){
+        return "Now playing " + this.Track + " by the " + this.Artist;
+    }
 }
