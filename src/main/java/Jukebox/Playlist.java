@@ -30,6 +30,8 @@ public class Playlist {
         playlist2.add(tracks.get(2));
 }
 
+
+
 //    public void getSongs() {
 //
 //        for (Playlist a : playlist2) {
