@@ -33,7 +33,7 @@ public class Song extends Playlist {
         this.Artist = artist;
     }
 
-    public String getSongPlaying(){
-        return "Now playing " + this.Track + this.Artist;
-    }
+//    public String getSongPlaying(){
+//        return "Now playing " + this.Track + this.Artist;
+//    }
 }
