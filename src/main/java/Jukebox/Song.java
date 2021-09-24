@@ -1,6 +1,6 @@
 package Jukebox;
 
-public class Song extends Playlist {
+public class Song {
     private String Track;
     private String Artist;
 
