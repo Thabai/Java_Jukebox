@@ -1,43 +1,48 @@
 package Jukebox;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class Album extends Playlist{
-        private List<Song> Songs;
+        private List<Song> albumSongs = new LinkedList<>();
         private String Title;
         private String Artist;
 
-        public Album (List<Song> songs, String Title, String Artist){
-            this.Songs = songs;
+        public Album (List<Song> albumSongs, String Title, String Artist){
+            this.albumSongs = albumSongs;
             this.Title = Title;
             this.Artist = Artist;
         }
 
-//    public void setSongs(List<Song> songs) {
-//        this.Songs = songs;
-//    }
-//
-//    public List<Song> getSongs() {
-//        return Songs;
-//    }
+    public String getAlbum(){
+        return "Now playing from the album " + this.Title + " by the artist " + this.Artist;
+    }
+
+    public LinkedList<Song> addAlbumSong(String track, String artist) {
+        albumSongs.add(new Song(track, artist));
+        return null;
+    }
+
+    public void setAlbum(LinkedList<Song> albumSongs, String title, String artist) {
+        this.albumSongs = albumSongs;
+        this.Title = title;
+        this.Artist = artist;
+    }
 
     public String getTitle() {
-        return Title;
+        return this.Title;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.Title = title;
     }
 
     public String getArtist() {
-        return Artist;
+        return this.Artist;
     }
 
     public void setArtist(String artist) {
         this.Artist = artist;
     }
 
-    public String getAlbumPlaying(){
-        return "Now playing " + this.Title + this.Artist;
-    }
 }
