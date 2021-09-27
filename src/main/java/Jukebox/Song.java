@@ -1,8 +1,9 @@
 package Jukebox;
 
-public class Song {
+public class Song{
     private String Track;
     private String Artist;
+    private boolean Playing = false;
 
     public Song() {
         this("test");
@@ -42,4 +43,11 @@ public class Song {
         return "Now playing " + this.Track + " by the " + this.Artist;
     }
 
+    public void play() {
+        Playing = true;
+    }
+
+    public boolean getPlaying() {
+        return Playing;
+    }
 }
