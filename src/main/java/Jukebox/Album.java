@@ -13,7 +13,6 @@ public class Album{
 
     public Album(List<Song> albumSongs) {
         this(albumSongs, 1);
-
     }
 
     public Album(List<Song> albumSongs, int songNumber) {
@@ -24,7 +23,7 @@ public class Album{
         this(albumSongs, 1, "tester", "Testing");
     }
 
-        public Album (List<Song> albumSongs, int songNumber, String Title, String Artist){
+    public Album (List<Song> albumSongs, int songNumber, String Title, String Artist){
             super();
             this.albumSongs = albumSongs;
             this.songNumber = songNumber;
@@ -68,10 +67,21 @@ public class Album{
         this.songNumber = songNumber;
     }
 
-    public LinkedList<Song> addAlbumSong(String track, String artist) {
+    public void addAlbumSong(String track, String artist) {
         albumSongs.add(new Song(track, artist));
-        return null;
     }
 
+    public List<Song> getAlbumSongs() {
+        return albumSongs;
+    }
 
+    public String songAvailable(String Track) {
+
+        for (Song checkedSong : this.getAlbumSongs()) {
+            if (checkedSong.getTrack().equals(Track)) {
+                return "Song available " + checkedSong.getTrack();
+            }
+        }
+        return "Song not available";
+    }
 }

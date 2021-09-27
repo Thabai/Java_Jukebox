@@ -13,7 +13,7 @@ public class AlbumTest {
     @Test
     public void testGetSetAlbum() {
         Album testSongs = new Album(new LinkedList<Song>(), 1,"Surfin USA", "Beach Boys");
-        testSongs.setAlbum(testSongs.addAlbumSong("Party Rock Anthem", "LMFAO"), 2, "Sorry for Party Rocking", "LMFAO");
+        testSongs.setAlbum(new LinkedList<Song>(), 2, "Sorry for Party Rocking", "LMFAO");
         assertEquals("Now playing song number 2 from the album Sorry for Party Rocking by the artist LMFAO", testSongs.getAlbum(),"No album songs");
     }
 
@@ -40,6 +40,13 @@ public class AlbumTest {
         Album testSongs = new Album( new LinkedList<Song>() ,1,"test", "test");
         testSongs.setSongNumber(4);
         assertEquals(4, testSongs.getSongNumber(),"No Title set");
+    }
+
+    @Test
+    public void testGetSetSongs(){
+        Album testSongs = new Album(new LinkedList<Song>(), 1,"Surfin USA", "Beach Boys");
+        testSongs.addAlbumSong("Party Rocking", "LMFAO");
+        assertEquals("Song available Party Rocking", testSongs.songAvailable("Party Rocking"),"Song not found");
     }
     }
 

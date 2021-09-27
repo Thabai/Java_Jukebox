@@ -19,8 +19,8 @@ public class PlaylistTest {
     @Test
     public void testPlaylistSongs(){
         Playlist testPlay = new Playlist();
-        testPlay.addToPlaylist(new Song ("Party Time", "Party 2000"));
-        assertEquals("Now playing Party Time", testPlay.getPlaylistSong("Party Time"),"No Artist");
+        testPlay.addToPlaylist(new Song ("Rap God", "Eminem"));
+        assertEquals("Now playing Rap God", testPlay.getPlaylistSong("Rap God"),"No Artist");
     }
 
 }

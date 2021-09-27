@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="JukeboxTests.AlbumTest" time="0.047" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="JukeboxTests.AlbumTest" time="0.063" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17+35-2724"/>
@@ -60,6 +60,8 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="JukeboxTests.AlbumTest" name="JukeboxTests.AlbumTest.testGetSetArtist" time="0.047"/>
+  <testcase classname="JukeboxTests.AlbumTest" name="JukeboxTests.AlbumTest.testGetSetSongNumber" time="0.029"/>
+  <testcase classname="JukeboxTests.AlbumTest" name="JukeboxTests.AlbumTest.testGetSetAlbum" time="0.034"/>
+  <testcase classname="JukeboxTests.AlbumTest" name="JukeboxTests.AlbumTest.testGetSetArtist" time="0"/>
   <testcase classname="JukeboxTests.AlbumTest" name="JukeboxTests.AlbumTest.testGetSetTitle" time="0"/>
 </testsuite>
