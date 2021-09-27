@@ -15,7 +15,7 @@ public class Playlist {
         this.playlistSongNo = 2;
     }
 
-    public void playFirst() {
+    public void play() {
         for (Song checkedSong : this.playlistSongs) {
             checkedSong.play();
         }
