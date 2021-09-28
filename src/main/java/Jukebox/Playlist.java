@@ -15,20 +15,20 @@ public class Playlist {
         this.playlistSongNo = 2;
     }
 
-    public void play() {
-        for (Song checkedSong : this.playlistSongs) {
-            checkedSong.play();
-        }
-    }
-
-    public Song getPlayingSong(){
-        for (Song checkedSong : this.playlistSongs) {
-            if (checkedSong.getPlaying()) {
-                return checkedSong;
-            }
-        }
-        return null;
-    }
+//    public void play() {
+//        for (Song checkedSong : this.playlistSongs) {
+//            checkedSong.play();
+//        }
+//    }
+//
+//    public Song getPlayingSong(){
+//        for (Song checkedSong : this.playlistSongs) {
+//            if (checkedSong.getPlaying()) {
+//                return checkedSong;
+//            }
+//        }
+//        return null;
+//    }
 
         public String getPlaylistSong(String Track) {
 
@@ -39,7 +39,6 @@ public class Playlist {
             }
             return null;
         }
-
 
 //    public String getSongsFromInsideAlbum() {
 //
@@ -53,5 +52,16 @@ public class Playlist {
         if (song != null) {
             this.playlistSongs.add(song);
         }
+    }
+
+    //cucumber///
+    public Boolean getPlaySong(String Track) {
+
+        for (Song checkedSong : this.playlistSongs) {
+            if (checkedSong.getTrack().equals(Track)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
