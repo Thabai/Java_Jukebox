@@ -1,45 +1,0 @@
-
-(Jukebox.Song#getSong()Ljava/lang/String;M
-CC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Song.java* *("1*À
-1M
-CC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Song.java+ +(ç
-ä
-M
-CC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Song.java+  +(*
-%0java.lang.String"__id**
-Jukebox.Song"
-Track†
-ù
-M
-CC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Song.java+ +(*
-%1java.lang.String"__concat*
-Now playing *
-
-%0java.lang.Stringú
-ô
-M
-CC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Song.java+ +(7
-%2java.lang.String"__concat*
-
-%1java.lang.String*
-
- by the é
-ã
-M
-CC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Song.java+: +(E
-%3java.lang.String"__id**
-Jukebox.Song"
-Artist®
-•
-M
-CC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Song.java+ +(E
-%4java.lang.String"__concat*
-
-%2java.lang.String*
-
-%3java.lang.String"i
-M
-CC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Song.java+ +(F
-
-%4java.lang.StringB
-Jukebox.Song

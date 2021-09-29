@@ -1,5 +1,6 @@
-JukeboxTests\SongTest.class
+JukeboxTests\RunnerTest.class
 JukeboxTests\PlaylistTest.class
-JukeboxTests\AddSong.class
-JukeboxTests\AlbumTest.class
 JukeboxTests\JukeBoxTest.class
+JukeboxTests\SongTest.class
+JukeboxTests\AddSongTest.class
+JukeboxTests\AlbumTest.class

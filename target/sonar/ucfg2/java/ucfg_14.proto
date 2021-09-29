@@ -1,45 +1,0 @@
-
-*Jukebox.Album#getAlbum()Ljava/lang/String;N
-DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java ("1*ô
-1N
-DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java (,”
-‘
-N
-DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java/ (>
-%0java.lang.String"__id*!*
-Jukebox.Album"
-
-albumTitle°
-­
-N
-DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java (>
-%1java.lang.String"__concat*
-Now playing from the album *
-
-%0java.lang.String¤
-¡
-N
-DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java (R
-%2java.lang.String"__concat*
-
-%1java.lang.String*
- by the artist •
-’
-N
-DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.javaU (e
-%3java.lang.String"__id*"* 
-Jukebox.Album"
-albumArtist©
-¦
-N
-DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java (e
-%4java.lang.String"__concat*
-
-%2java.lang.String*
-
-%3java.lang.String"j
-N
-DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java (f
-
-%4java.lang.StringB
-Jukebox.Album

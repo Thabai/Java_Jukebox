@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class AddSong {
+public class AddSongTest {
     private String songAvailable;
     private String actualAnswer;
 
