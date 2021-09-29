@@ -6,65 +6,46 @@ import java.util.List;
 public class Album{
 
         private List<Song> albumSongs;
-        private int songNumber;
-        private String Title;
-        private String Artist;
+//        private int songNumber;
+        private String albumTitle;
+        private String albumArtist;
 
-
-    public Album(List<Song> albumSongs) {
-        this(albumSongs, 1);
+    public Album(List<Song> albumSongs, String Title) {
+        this(albumSongs, "tester", "Testing");
     }
 
-    public Album(List<Song> albumSongs, int songNumber) {
-        this(albumSongs, 1, "tester");
-    }
-
-    public Album(List<Song> albumSongs, int songNumber, String Title) {
-        this(albumSongs, 1, "tester", "Testing");
-    }
-
-    public Album (List<Song> albumSongs, int songNumber, String Title, String Artist){
+    public Album (List<Song> albumSongs, String Title, String Artist){
             super();
             this.albumSongs = albumSongs;
-            this.songNumber = songNumber;
-            this.Title = Title;
-            this.Artist = Artist;
+            this.albumTitle = Title;
+            this.albumArtist = Artist;
         }
 
 
     public String getAlbum(){
-        return "Now playing song number " + this.songNumber +  " from the album " + this.Title + " by the artist " + this.Artist;
+        return "Now playing from the album " + this.albumTitle + " by the artist " + this.albumArtist;
     }
 
-    public void setAlbum(LinkedList<Song> albumSongs, int songNumber, String title, String artist) {
+    public void setAlbum(LinkedList<Song> albumSongs, String title, String artist) {
         this.albumSongs = albumSongs;
-        this.songNumber = songNumber;
-        this.Title = title;
-        this.Artist = artist;
+        this.albumTitle = title;
+        this.albumArtist = artist;
     }
 
-    public String getTitle() {
-        return this.Title;
+    public String getAlbumTitle() {
+        return this.albumTitle;
     }
 
-    public void setTitle(String title) {
-        this.Title = title;
+    public void setAlbumTitle(String albumTitle) {
+        this.albumTitle = albumTitle;
     }
 
-    public String getArtist() {
-        return this.Artist;
+    public String getAlbumArtist() {
+        return this.albumArtist;
     }
 
-    public void setArtist(String artist) {
-        this.Artist = artist;
-    }
-
-    public int getSongNumber() {
-        return this.songNumber;
-    }
-
-    public void setSongNumber(int songNumber) {
-        this.songNumber = songNumber;
+    public void setAlbumArtist(String albumArtist) {
+        this.albumArtist = albumArtist;
     }
 
     public void addAlbumSong(String track, String artist) {

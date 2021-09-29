@@ -30,6 +30,16 @@ public class Playlist {
 //        return null;
 //    }
 
+//    public Song getNextSong(){
+//        for (Song checkedSong : this.playlistSongs) {
+//            if (checkedSong.getPlaying()) {
+//                this.playlistSongs.checkedSong.Track++;
+//                return this.playlistSongs++;
+//            }
+//        }
+//        return null;
+//    }
+
         public String getPlaylistSong(String Track) {
 
             for (Song checkedSong : this.playlistSongs) {

@@ -7,8 +7,8 @@ public class MainJukebox {
 
 
     public static void main(String[] args) {
-        List<Song> AlbumSongs;
-        Album Album1;
+//        List<Song> AlbumSongs;
+//        Album Album1;
 
 //         public Album() {
 //            addAlbumSong("Party Time", "Party 2000");
@@ -17,10 +17,10 @@ public class MainJukebox {
 //            this.playlistSongNo = 2;
 //        }
 
-        AlbumSongs = new LinkedList<>();
-        Album1 = new Album(AlbumSongs);
-        Album1.addAlbumSong("Party Time", "Party 2000");
-        Album1.addAlbumSong("Panchitos Song", "Panchos");
+//        AlbumSongs = new LinkedList<>();
+//        Album1 = new Album(AlbumSongs);
+//        Album1.addAlbumSong("Party Time", "Party 2000");
+//        Album1.addAlbumSong("Panchitos Song", "Panchos");
 
 //        Playlist jukebox = new  {Playlist();
 //        Playlist.playFirst();
