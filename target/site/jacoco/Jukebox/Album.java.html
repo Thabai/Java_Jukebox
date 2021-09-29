@@ -6,73 +6,64 @@ import java.util.List;
 public class Album{
 
         private List&lt;Song&gt; albumSongs;
-        private int songNumber;
-        private String Title;
-        private String Artist;
+//        private int songNumber;
+        private String albumTitle;
+        private String albumArtist;
 
+    public Album(List&lt;Song&gt; albumSongs, String Title) {
+<span class="nc" id="L14">        this(albumSongs, &quot;tester&quot;, &quot;Testing&quot;);</span>
+<span class="nc" id="L15">    }</span>
 
-    public Album(List&lt;Song&gt; albumSongs) {
-<span class="nc" id="L15">        this(albumSongs, 1);</span>
-
-<span class="nc" id="L17">    }</span>
-
-    public Album(List&lt;Song&gt; albumSongs, int songNumber) {
-<span class="nc" id="L20">        this(albumSongs, 1, &quot;tester&quot;);</span>
-<span class="nc" id="L21">    }</span>
-
-    public Album(List&lt;Song&gt; albumSongs, int songNumber, String Title) {
-<span class="nc" id="L24">        this(albumSongs, 1, &quot;tester&quot;, &quot;Testing&quot;);</span>
-<span class="nc" id="L25">    }</span>
-
-        public Album (List&lt;Song&gt; albumSongs, int songNumber, String Title, String Artist){
-<span class="fc" id="L28">            super();</span>
-<span class="fc" id="L29">            this.albumSongs = albumSongs;</span>
-<span class="fc" id="L30">            this.songNumber = songNumber;</span>
-<span class="fc" id="L31">            this.Title = Title;</span>
-<span class="fc" id="L32">            this.Artist = Artist;</span>
-<span class="fc" id="L33">        }</span>
+    public Album (List&lt;Song&gt; albumSongs, String Title, String Artist){
+<span class="fc" id="L18">            super();</span>
+<span class="fc" id="L19">            this.albumSongs = albumSongs;</span>
+<span class="fc" id="L20">            this.albumTitle = Title;</span>
+<span class="fc" id="L21">            this.albumArtist = Artist;</span>
+<span class="fc" id="L22">        }</span>
 
 
     public String getAlbum(){
-<span class="fc" id="L37">        return &quot;Now playing song number &quot; + this.songNumber +  &quot; from the album &quot; + this.Title + &quot; by the artist &quot; + this.Artist;</span>
+<span class="fc" id="L26">        return &quot;Now playing from the album &quot; + this.albumTitle + &quot; by the artist &quot; + this.albumArtist;</span>
     }
 
-    public void setAlbum(LinkedList&lt;Song&gt; albumSongs, int songNumber, String title, String artist) {
-<span class="fc" id="L41">        this.albumSongs = albumSongs;</span>
-<span class="fc" id="L42">        this.songNumber = songNumber;</span>
-<span class="fc" id="L43">        this.Title = title;</span>
-<span class="fc" id="L44">        this.Artist = artist;</span>
-<span class="fc" id="L45">    }</span>
+    public void setAlbum(LinkedList&lt;Song&gt; albumSongs, String title, String artist) {
+<span class="fc" id="L30">        this.albumSongs = albumSongs;</span>
+<span class="fc" id="L31">        this.albumTitle = title;</span>
+<span class="fc" id="L32">        this.albumArtist = artist;</span>
+<span class="fc" id="L33">    }</span>
 
-    public String getTitle() {
-<span class="fc" id="L48">        return this.Title;</span>
+    public String getAlbumTitle() {
+<span class="fc" id="L36">        return this.albumTitle;</span>
     }
 
-    public void setTitle(String title) {
-<span class="fc" id="L52">        this.Title = title;</span>
+    public void setAlbumTitle(String albumTitle) {
+<span class="fc" id="L40">        this.albumTitle = albumTitle;</span>
+<span class="fc" id="L41">    }</span>
+
+    public String getAlbumArtist() {
+<span class="fc" id="L44">        return this.albumArtist;</span>
+    }
+
+    public void setAlbumArtist(String albumArtist) {
+<span class="fc" id="L48">        this.albumArtist = albumArtist;</span>
+<span class="fc" id="L49">    }</span>
+
+    public void addAlbumSong(String track, String artist) {
+<span class="fc" id="L52">        albumSongs.add(new Song(track, artist));</span>
 <span class="fc" id="L53">    }</span>
 
-    public String getArtist() {
-<span class="fc" id="L56">        return this.Artist;</span>
+    public List&lt;Song&gt; getAlbumSongs() {
+<span class="fc" id="L56">        return albumSongs;</span>
     }
 
-    public void setArtist(String artist) {
-<span class="fc" id="L60">        this.Artist = artist;</span>
-<span class="fc" id="L61">    }</span>
+    public String songAvailable(String Track) {
 
-    public int getSongNumber() {
-<span class="fc" id="L64">        return this.songNumber;</span>
+<span class="pc bpc" id="L61" title="1 of 2 branches missed.">        for (Song checkedSong : this.getAlbumSongs()) {</span>
+<span class="pc bpc" id="L62" title="1 of 2 branches missed.">            if (checkedSong.getTrack().equals(Track)) {</span>
+<span class="fc" id="L63">                return &quot;Song available &quot; + checkedSong.getTrack();</span>
+            }
+<span class="nc" id="L65">        }</span>
+<span class="nc" id="L66">        return &quot;Song not available&quot;;</span>
     }
-
-    public void setSongNumber(int songNumber) {
-<span class="fc" id="L68">        this.songNumber = songNumber;</span>
-<span class="fc" id="L69">    }</span>
-
-    public LinkedList&lt;Song&gt; addAlbumSong(String track, String artist) {
-<span class="fc" id="L72">        albumSongs.add(new Song(track, artist));</span>
-<span class="fc" id="L73">        return null;</span>
-    }
-
-
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

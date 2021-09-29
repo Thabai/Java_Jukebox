@@ -15,31 +15,40 @@ public class Playlist {
 <span class="fc" id="L15">        this.playlistSongNo = 2;</span>
 <span class="fc" id="L16">    }</span>
 
-    public void play() {
-<span class="nc bnc" id="L19" title="All 2 branches missed.">        for (Song checkedSong : this.playlistSongs) {</span>
-<span class="nc" id="L20">            checkedSong.play();</span>
-<span class="nc" id="L21">        }</span>
-<span class="nc" id="L22">    }</span>
+//    public void play() {
+//        for (Song checkedSong : this.playlistSongs) {
+//            checkedSong.play();
+//        }
+//    }
+//
+//    public Song getPlayingSong(){
+//        for (Song checkedSong : this.playlistSongs) {
+//            if (checkedSong.getPlaying()) {
+//                return checkedSong;
+//            }
+//        }
+//        return null;
+//    }
 
-    public Song getPlayingSong(){
-<span class="nc bnc" id="L25" title="All 2 branches missed.">        for (Song checkedSong : this.playlistSongs) {</span>
-<span class="nc bnc" id="L26" title="All 2 branches missed.">            if (checkedSong.getPlaying()) {</span>
-<span class="nc" id="L27">                return checkedSong;</span>
-            }
-<span class="nc" id="L29">        }</span>
-<span class="nc" id="L30">        return null;</span>
-    }
+//    public Song getNextSong(){
+//        for (Song checkedSong : this.playlistSongs) {
+//            if (checkedSong.getPlaying()) {
+//                this.playlistSongs.checkedSong.Track++;
+//                return this.playlistSongs++;
+//            }
+//        }
+//        return null;
+//    }
 
         public String getPlaylistSong(String Track) {
 
-<span class="pc bpc" id="L35" title="1 of 2 branches missed.">            for (Song checkedSong : this.playlistSongs) {</span>
-<span class="fc bfc" id="L36" title="All 2 branches covered.">                if (checkedSong.getTrack().equals(Track)) {</span>
-<span class="fc" id="L37">                    return &quot;Now playing &quot; + checkedSong.getTrack();</span>
+<span class="pc bpc" id="L45" title="1 of 2 branches missed.">            for (Song checkedSong : this.playlistSongs) {</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">                if (checkedSong.getTrack().equals(Track)) {</span>
+<span class="fc" id="L47">                    return &quot;Now playing &quot; + checkedSong.getTrack();</span>
                 }
-<span class="fc" id="L39">            }</span>
-<span class="nc" id="L40">            return null;</span>
+<span class="fc" id="L49">            }</span>
+<span class="nc" id="L50">            return null;</span>
         }
-
 
 //    public String getSongsFromInsideAlbum() {
 //
@@ -50,9 +59,20 @@ public class Playlist {
 //        }
 
     public void addToPlaylist(Song song) {
-<span class="pc bpc" id="L53" title="1 of 2 branches missed.">        if (song != null) {</span>
-<span class="fc" id="L54">            this.playlistSongs.add(song);</span>
+<span class="pc bpc" id="L62" title="1 of 2 branches missed.">        if (song != null) {</span>
+<span class="fc" id="L63">            this.playlistSongs.add(song);</span>
         }
-<span class="fc" id="L56">    }</span>
+<span class="fc" id="L65">    }</span>
+
+    //cucumber///
+    public Boolean getPlaySong(String Track) {
+
+<span class="nc bnc" id="L70" title="All 2 branches missed.">        for (Song checkedSong : this.playlistSongs) {</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">            if (checkedSong.getTrack().equals(Track)) {</span>
+<span class="nc" id="L72">                return true;</span>
+            }
+<span class="nc" id="L74">        }</span>
+<span class="nc" id="L75">        return false;</span>
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

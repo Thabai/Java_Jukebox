@@ -30,6 +30,11 @@
             <artifactId>surefire-junit4</artifactId>
             <version>2.22.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.racodond.sonarqube.plugin.gherkin</groupId>
+            <artifactId>sonar-gherkin-plugin</artifactId>
+            <version>1.7</version>
+        </dependency>
     </dependencies>
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
@@ -41,6 +46,7 @@
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.language>java</sonar.language>
+        <sonar.sources>pom.xml,src/main/java,src/test/resources/features</sonar.sources>
     </properties>
     <build>
         <plugins>

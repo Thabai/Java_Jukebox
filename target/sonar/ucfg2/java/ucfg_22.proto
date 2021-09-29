@@ -1,0 +1,70 @@
+
+AJukebox.Album#songAvailable(Ljava/lang/String;)Ljava/lang/String;N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java; ;("5*ù
+2N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java= =(}
+{
+N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java= =(
+checkedSongJukebox.Song"__id*
+""œ
+™
+N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java= =(
+checkedSongJukebox.Song"
+__arrayGet*
+
+%0java.util.List*
+""*
+4
+1*ª
+3N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java? ?((Á¾
+N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java?+ ?(A
+%3java.lang.String")Jukebox.Song#getTrack()Ljava/lang/String;*
+
+checkedSongJukebox.Song2
+getTrack()¤
+¡
+N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java? ?(A
+%4java.lang.String"__concat*
+Song available *
+
+%3java.lang.String"j
+N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java? ?(B
+
+%4java.lang.String*…
+4N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java> >(Á¾
+N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java> >(&
+%1java.lang.String")Jukebox.Song#getTrack()Ljava/lang/String;*
+
+checkedSongJukebox.Song2
+getTrack()ãà
+N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java> >(4
+%2boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%1java.lang.String*
+
+Trackjava.lang.String2equals(Ljava/lang/Object;)*
+2
+3*—
+5N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java=  =($¼¹
+N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.java=  =(4
+%0java.util.List"-Jukebox.Album#getAlbumSongs()Ljava/util/List;*
+Jukebox.Album2getAlbumSongs()*
+2*½
+1N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.javaB B(#"h
+N
+DC:/Users/carly/IdeaProjects/Jukebox/src/main/java/Jukebox/Album.javaB B($
+Song not available:
+Trackjava.lang.StringB
+Jukebox.Album

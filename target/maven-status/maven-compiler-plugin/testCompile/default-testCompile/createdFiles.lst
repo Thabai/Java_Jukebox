@@ -1,4 +1,5 @@
 JukeboxTests\SongTest.class
 JukeboxTests\PlaylistTest.class
+JukeboxTests\AddSong.class
 JukeboxTests\AlbumTest.class
 JukeboxTests\JukeBoxTest.class
