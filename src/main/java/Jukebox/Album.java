@@ -6,13 +6,8 @@ import java.util.List;
 public class Album{
 
         private List<Song> albumSongs;
-//        private int songNumber;
         private String albumTitle;
         private String albumArtist;
-
-    public Album(List<Song> albumSongs, String Title) {
-        this(albumSongs, "tester", "Testing");
-    }
 
     public Album (List<Song> albumSongs, String Title, String Artist){
             super();
