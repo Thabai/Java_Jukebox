@@ -9,22 +9,21 @@ public class Album{
         private String albumTitle;
         private String albumArtist;
 
-    public Album (List<Song> albumSongs, String Title, String Artist){
+    public Album (List<Song> albumSongs, String albumTitle, String albumArtist){
             super();
             this.albumSongs = albumSongs;
-            this.albumTitle = Title;
-            this.albumArtist = Artist;
+            this.albumTitle = albumTitle;
+            this.albumArtist = albumArtist;
         }
-
 
     public String getAlbum(){
         return "Now playing from the album " + this.albumTitle + " by the artist " + this.albumArtist;
     }
 
-    public void setAlbum(LinkedList<Song> albumSongs, String title, String artist) {
+    public void setAlbum(List<Song> albumSongs, String albumTitle, String albumArtist) {
         this.albumSongs = albumSongs;
-        this.albumTitle = title;
-        this.albumArtist = artist;
+        this.albumTitle = albumTitle;
+        this.albumArtist = albumArtist;
     }
 
     public String getAlbumTitle() {
